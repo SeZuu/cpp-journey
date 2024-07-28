@@ -1,0 +1,5 @@
+# Exclude executable files
+*.exe
+
+# Exclude .vscode
+*.vscode/
