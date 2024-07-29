@@ -1,5 +1,5 @@
 #include <iostream>
-
+#include <math.h>
 int main()
 {
     /*Ejercicio 1
@@ -107,6 +107,103 @@ int main()
     importe de la compra, el importe del descuento y el importe a pagar por la compra de cierta
     cantidad de unidades del producto.
     */
+
+    // float discount, item_price;
+    // int number_of_items;
+
+    // std::cout << "Ingrese el precio del producto: ";
+    // std::cin >> item_price;
+    // std::cout << "Ingrese el descuento (%): ";
+    // std::cin >> discount;
+    // std::cout << "Ingrese la cantidad de productos que comprara: ";
+    // std::cin >> number_of_items;
+
+    // std::cout << "El precio total a pagar es: " << (item_price - (item_price * (discount / 100))) * number_of_items;
+
+    /*Ejercicio 7
+    El cálculo del pago mensual de un empleado de una empresa se efectúa de la siguiente manera:
+    el sueldo básico se calcula en base al número total de horas trabajadas basado en una tarifa
+    horaria; al sueldo básico, se le aplica una bonificación del 18% del mismo obteniéndose el
+    sueldo bruto; al sueldo bruto, se le aplica un descuento del 12% obteniéndose el sueldo neto.
+    Elabore un programa en C++ que calcule e imprima el sueldo básico, el sueldo bruto y el sueldo
+    neto de un trabajador.*/
+
+    // int worked_hours;
+    // float tarifa_horaria, sueldo_basico, sueldo_bruto, sueldo_neto;
+
+    // std::cout << "Ingrese las horas trabajadas: ";
+    // std::cin >> worked_hours;
+    // std::cout << "Ingrese la tarifa horaria (pago x  hora): ";
+    // std::cin >> tarifa_horaria;
+    // std::cout << std::endl;
+
+    // sueldo_basico = worked_hours * tarifa_horaria;
+    // sueldo_bruto = sueldo_basico + (sueldo_basico * 0.18);
+    // sueldo_neto = sueldo_bruto - (sueldo_bruto * 0.12);
+
+    // std::cout << "El sueldo basico es: " << sueldo_basico << std::endl;
+    // std::cout << "El sueldo bruto es: " << sueldo_bruto << std::endl;
+    // std::cout << "El sueldo neto es: " << sueldo_neto;
+
+    /*Ejercicio 8
+    Elabore un programa en C++ que calcule el sueldo bruto, el descuento por ESSALUD, el
+    descuento por AFP y el sueldo neto del empleado de una empresa de acuerdo a los siguientes
+    criterios: el sueldo bruto se calcula multiplicando el número de horas trabajadas por una tarifa
+    horaria, el descuento por ESSALUD es igual al 9% del sueldo bruto, el descuento por AFP es
+    igual al 11.5% del sueldo bruto, el sueldo neto es la diferencia entre el sueldo bruto y el
+    descuento total.*/
+
+    // int worked_hours;
+    // float tarifa_horaria, sueldo_bruto, sueldo_neto, essalud_dsct, afp_dsct;
+    // std::cout << "Ingrese las horas trabajadas: ";
+    // std::cin >> worked_hours;
+    // std::cout << "Ingrese la tarifa horaria: ";
+    // std::cin >> tarifa_horaria;
+    // std::cout << std::endl;
+
+    // sueldo_bruto = worked_hours * tarifa_horaria;
+    // essalud_dsct = sueldo_bruto * 0.09;
+    // afp_dsct = sueldo_bruto * 0.115;
+    // sueldo_neto = sueldo_bruto - (essalud_dsct + afp_dsct);
+
+    // std::cout << "El sueldo bruto es: " << sueldo_bruto << std::endl;
+    // std::cout << "El descuento por essalud es: " << essalud_dsct << std::endl;
+    // std::cout << "El descuento por afp es: " << afp_dsct << std::endl;
+    // std::cout << "El sueldo neto es: " << sueldo_neto << std::endl;
+
+    // EJECICIO 9
+    // float h, r, area_triangulo, area_circulo, altura;
+
+    // std::cout << "Ingrese H: ";
+    // std::cin >> h;
+    // std::cout << "Ingrese R: ";
+    // std::cin >> r;
+
+    // altura = sqrt(pow(h, 2) + pow(r, 2));
+    // area_triangulo = r * altura;
+    // area_circulo = (3.14 * pow(r, 2)) / 2;
+
+    // std::cout << "El area de la figura es: " << area_circulo + area_triangulo;
+
+    /*Ejercicio 10
+    Se requiere determinar el tiempo que tarda una persona en llegar de una ciudad a otra en
+    bicicleta, considerando que lleva una velocidad constante. Elabore un programa en C++ que
+    permita resolver el problema.*/
+
+    // float velocidad, distancia;
+    // std::cout << "Ingrese la velocidad: ";
+    // std::cin >> velocidad;
+    // std::cout << "Ingrese la distancia: ";
+    // std::cin >> distancia;
+
+    // std::cout << "El tiempo que tarda es: " << distancia / velocidad;
+
+    /*Ejercicio 11
+    Elabore un programa en C++ que permita mostrar el estado del alumno, según la nota final del
+    curso. Para ello debe tener en cuenta los siguientes criterios:
+     Si la nota es menor de 12.50 está desaprobado, por lo que mostrará una D.
+     Si la nota es mayor o igual de 12.50 y menor o igual a 20 está aprobado, entonces
+    mostrará una A.*/
 
     return 0;
 }
