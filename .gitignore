@@ -3,3 +3,6 @@
 
 # Exclude .vscode
 *.vscode/
+
+# Exclude demo file
+*demo
