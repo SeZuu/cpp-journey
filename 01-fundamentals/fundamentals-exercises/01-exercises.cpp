@@ -205,5 +205,134 @@ int main()
      Si la nota es mayor o igual de 12.50 y menor o igual a 20 está aprobado, entonces
     mostrará una A.*/
 
+    // float grade;
+    // std::cout << "Ingrese la nota del alumno: ";
+    // std::cin >> grade;
+
+    // if (grade >= 12.5 && grade <= 20)
+    // {
+    //     std::cout << "La nota final es A";
+    // }
+    // else
+    // {
+    //     std::cout << "La nota final es D";
+    // }
+
+    /*Ejercicio 12
+    Una operadora necesita calcular el recibo de consumo, el cual se obtiene de la siguiente manera:
+     Si consume 4 GB o menos, paga s/.50 por mes.
+     Si consume más de 4 GB hasta 8 GB paga s/.85 por mes; y por cada GB de consumo
+    adicional por encima de 8 GB pagará S/. 4.50.
+    Elabore un programa en C++ que permita resolver el problema.*/
+
+    // float gigas_consumidos;
+    // std::cout << "Ingrese la cantidad de gigas consumidos: ";
+    // std::cin >> gigas_consumidos;
+
+    // if (gigas_consumidos > 8)
+    // {
+    //     std::cout << "El pago es de: " << 85 + ((gigas_consumidos - 8) * 4.50);
+    // }
+    // else if (gigas_consumidos > 4)
+    // {
+    //     std::cout << "EL pago es de: 85";
+    // }
+    // else
+    // {
+    //     std::cout << "El pago es de: 50";
+    // }
+
+    /*Ejercicio 13
+    Elabore un programa en C++ en donde se solicite ingresar un número entero positivo de 3 cifras
+    únicamente y verificar si el número ingresado es correcto, si no es de tres cifras mostrar un
+    mensaje de error. Finalmente, mostrar el número ingresado al revés.
+    Ejemplos:
+    Si se ingresa un número de 4 cifras debe mostrar -1, lo que significa error.
+    Si se ingresa un número de 2 cifras debe mostrar -1, lo que significa error.
+    Si se ingresa el número 263 debe mostrar el número al revés: 362*/
+
+    // int num, reversed_num;
+    // std::cout << "Ingrese un numero de 3 cifras: ";
+    // std::cin >> num;
+
+    // if (num > 999 || num < 100)
+    // {
+    //     std::cout << "-1";
+    // }
+
+    // reversed_num = (num % 10) * 100;
+    // reversed_num += ((num / 10) % 10) * 10;
+    // reversed_num += num / 100;
+
+    // std::cout << "El numero " << num << " al reves es -> " << reversed_num;
+
+    /*Ejercicio 14
+    Elabore un programa en C++ en donde se ingrese un número entero de 3 cifras únicamente y
+    luego se debe determinar si el número ingresado es capicúa. Un número capicúa se lee igual de
+    izquierda a derecha que derecha a izquierda.
+    4
+    Ejemplos: 161, 343, 565.
+     Si el número que se ingresa es incorrecto, esto significa no tiene 3 cifras, se debe mostrar
+    una “E”, que indica error.
+     Si el número que se ingresa es correcto, se debe mostrar un mensaje: “S” si el número
+    es capicúa o “N” si el número no es capicúa.*/
+
+    // int num, reversed_num;
+    // std::cout << "Ingrese un numero de 3 cifras: ";
+    // std::cin >> num;
+
+    // if (num > 999 || num < 100)
+    // {
+    //     std::cout << "E";
+    //     return 0;
+    // }
+
+    // reversed_num = (num % 10) * 100;
+    // reversed_num += ((num / 10) % 10) * 10;
+    // reversed_num += num / 100;
+
+    // if (num == reversed_num)
+    // {
+    //     std::cout << "S";
+    // }
+    // else
+    // {
+    //     std::cout << "N";
+    // }
+
+    /*Ejercicio 15
+    Elabore un programa en C++ en donde se solicite ingresar un número entero positivo en el
+    intervalo cerrado de 1 a 100. Verificar si el número ingresado es correcto, si no es correcto
+    mostrar un mensaje de error. Finalmente, luego de ingresar un número correcto, mostrar cuántos
+    dígitos tiene el número ingresado.
+    Ejemplos:
+    Si se ingresa un número de 4 cifras debe mostrar una “E” de error.
+    Si se ingresa un número de 1 cifra debe mostrar “1” que indica que el número tiene 1 dígito.
+    Si se ingresa un número de 2 cifras debe mostrar “2” que indica que el número tiene 2 dígitos.
+    Si se ingresa un número de 3 cifras debe mostrar “3” que indica que el número tiene 3 dígitos*/
+
+    int num;
+    std::cout << "Ingrese un numero entre 1 a 100: ";
+    std::cin >> num;
+
+    if (num < 1 || num > 100)
+    {
+        std::cout << "E";
+        return 0;
+    }
+
+    if (num < 10)
+    {
+        std::cout << 1;
+    }
+    else if (num < 100)
+    {
+        std::cout << 2;
+    }
+    else
+    {
+        std::cout << 3;
+    }
+
     return 0;
 }
