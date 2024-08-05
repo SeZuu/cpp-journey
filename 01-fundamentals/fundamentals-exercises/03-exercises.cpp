@@ -66,16 +66,16 @@ int main() {
     // std::cout << "Sumatoria de impares: " << sum_impar;
 
     // 6.
-    // int n;
-    // int sum = 0;
-    // std::cout << "n: ";
-    // std::cin >> n;
-    // for (int i = 0; i < n * 2; i++) {
-    //     if (i % 2 != 0) {
-    //         sum += i;
-    //     }
-    // }
-    // std::cout << "resultado: " << sum;
+    int n;
+    int sum = 0;
+    std::cout << "n: ";
+    std::cin >> n;
+    for (int i = 0; i < n * 2; i++) {
+        if (i % 2 != 0) {
+            sum += i;
+        }
+    }
+    std::cout << "resultado: " << sum;
 
     // 7.
     // int n_alumnos;
