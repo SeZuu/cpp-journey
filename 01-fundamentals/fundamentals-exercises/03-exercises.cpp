@@ -229,4 +229,60 @@ int main() {
     //     variante2 += 2.0;
     // }
     // std::cout << "suma: " << sum;
+
+    // 14.
+    // int numero;
+    // int reversed_number;
+    // reversed_number = 0;
+    // std::cout << "ingrese un numero: ";
+    // std::cin >> numero;
+    // while (numero > 0) {
+    //     reversed_number *= 10;
+    //     reversed_number += numero % 10;
+    //     numero /= 10;
+    // }
+    // std::cout << reversed_number;
+
+    // int n;
+    // float sum = 0;
+    // std::cout << "n: ";
+    // std::cin >> n;
+    // for (int i = 1; i < n; i++) {
+    //     if (n % i == 0) {
+    //         sum += i;
+    //         std::cout << sum;
+    //     }
+    // }
+    // if (sum == n)
+    //     std::cout << "Es perfecto";
+    // else
+    //     std::cout << "No es perfecto";
+
+    // 16. fibonacci
+    // int n, prev, prev1, fibo;
+    // prev = 0;
+    // prev1 = 1;
+    // std::cout << "n: ";
+    // std::cin >> n;
+    // for (int i = 0; i < n; i++) {
+    //     fibo = prev + prev1;
+    //     prev1 = prev;
+    //     prev = fibo;
+    //     std::cout << fibo << '\n';
+    // }
+
+    // 17. fibonacci sum
+    // int prev, prev1, fibo, n, sum;
+    // prev = 0;
+    // prev1 = 1;
+    // sum = 0;
+    // std::cout << "n: ";
+    // std::cin >> n;
+    // for (int i = 0; i < n; i++) {
+    //     fibo = prev + prev1;
+    //     prev1 = prev;
+    //     prev = fibo;
+    //     sum += fibo;
+    // }
+    // std::cout << "La suma es: " << sum;
 }
