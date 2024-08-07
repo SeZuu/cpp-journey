@@ -1,3 +1,4 @@
+#include <ctime>
 #include <iostream>
 
 int main() {
@@ -95,4 +96,137 @@ int main() {
     // }
 
     // 8.
+    // int n;
+    // float peso;
+    // int menos_40, entre_40_50, mas_50_menos_60, mas_igual_60;
+    // menos_40 = entre_40_50 = mas_50_menos_60 = mas_igual_60 = 0;
+
+    // do {
+    //     std::cout << "n: ";
+    //     std::cin >> n;
+    // } while (n < 0 || n > 50);
+
+    // for (int i = 0; i < n; i++) {
+    //     std::cout << "peso " << i + 1 << ": ";
+    //     std::cin >> peso;
+    //     if (peso < 40)
+    //         menos_40++;
+    //     else if (peso < 51)
+    //         entre_40_50++;
+    //     else if (peso < 60)
+    //         mas_50_menos_60++;
+    //     else
+    //         mas_igual_60++;
+    // }
+    // system("clear");
+    // std::cout << "Menos de 40kg: " << menos_40 << "\n";
+    // std::cout << "Entre 40 y 50kg: " << entre_40_50 << "\n";
+    // std::cout << "Mas de 50 y menos de 60kg: " << mas_50_menos_60 << "\n";
+    // std::cout << "60kg o mas: " << mas_igual_60;
+
+    // bool condition = true;
+    // int numero, mayor, menor, positivos, negativos, leidos;
+    // float prom;
+    // mayor = menor = prom = leidos = positivos = negativos = 0;
+    // while (condition) {
+    //     std::cout << "numero: ";
+    //     std::cin >> numero;
+    //     if (numero == 0) {
+    //         condition = false;
+    //         continue;
+    //     }
+    //     leidos++;
+    //     prom += numero;
+    //     if (numero > 0)
+    //         positivos++;
+    //     else if (numero < 0)
+    //         negativos++;
+    //     if (numero > mayor) {
+    //         mayor = numero;
+    //     } else if (numero < menor) {
+    //         menor = numero;
+    //     }
+    // }
+
+    // system("clear");
+
+    // std::cout << "numeros leidos: " << leidos << '\n';
+    // std::cout << "numero mayor: " << mayor << '\n';
+    // std::cout << "numero menor: " << menor << '\n';
+    // std::cout << "numeros positivos: " << positivos << '\n';
+    // std::cout << "numeros negativos: " << negativos << '\n';
+    // std::cout << "promedio: " << prom / leidos;
+
+    // 10. jueguito
+    // srand(time(NULL));
+    // int rand_number = rand() % 100 + 1;
+    // rand_number = 25;
+
+    // bool condition = true;
+    // int numero;
+
+    // for (int i = 1; condition; i++) {
+    //     std::cout << "Intento " << i << ": ";
+    //     std::cin >> numero;
+    //     if (numero > rand_number) {
+    //         std::cout << "El numero es menor\n";
+    //     } else if (numero < rand_number) {
+    //         std::cout << "El numero es mayor\n";
+    //     } else {
+    //         condition = false;
+    //         if (i < 4)
+    //             std::cout << "Fue pura suerte!!";
+    //         else if (i < 7)
+    //             std::cout << "Eres bueno!!";
+    //         else if (i == 7)
+    //             std::cout << "No esta mal";
+    //         else if (i == 8)
+    //             std::cout << "Se puede mejorar";
+    //         else
+    //             std::cout << "Que mal estas!!!";
+    //     }
+    // }
+
+    // 11. sucesion
+    // int n, variante;
+    // float sum = 1;
+    // variante = 2;
+    // std::cout << "Ingrese n: ";
+    // std::cin >> n;
+
+    // for (int i = 1; i < n; i++) {
+    //     sum += 1.0 / variante;
+    //     variante *= 2;
+    // }
+    // std::cout << "suma: " << sum;
+
+    // 12.
+    // int n, variante, signo;
+    // float sum = 0;
+    // variante = 1;
+    // signo = 1;
+    // std::cout << "n: ";
+    // std::cin >> n;
+    // for (int i = 0; i < n; i++) {
+    //     sum += signo * (1.0 / variante);
+    //     variante *= 2;
+    //     signo *= -1.0;
+    // }
+    // std::cout << "suma: " << sum;
+
+    // 13.
+    // float n, variante1, variante2, sum;
+    // sum = 1.0;
+    // variante1 = 2.0;
+    // variante2 = 1.0;
+
+    // std::cout << "ingrese n: ";
+    // std::cin >> n;
+
+    // for (int i = 0; i < n - 1; i++) {
+    //     sum += variante1 / variante2;
+    //     variante1 *= 2.0;
+    //     variante2 += 2.0;
+    // }
+    // std::cout << "suma: " << sum;
 }
