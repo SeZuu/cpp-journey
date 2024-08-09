@@ -1,3 +1,5 @@
+#include <math.h>
+
 #include <ctime>
 #include <iostream>
 
@@ -159,5 +161,169 @@ int main() {
     // std::cout << "prom peso adultos: " << peso_adu / adu_cont << '\n';
     // std::cout << "prom peso viejos: " << peso_vie / vie_cont << '\n';
 
-    return 0;
+    // 8.
+    // int n, digit, cont_upc, cont_pucp, cont_unmsm, cont_unfv, cont_ulima, cont_uch;
+    // cont_pucp = cont_uch = cont_ulima = cont_unfv = cont_unmsm = cont_upc = 0;
+
+    // std::cout << "ingrese el numero de universitarios: ";
+    // std::cin >> n;
+
+    // for (int i = 0; i < n; i++) {
+    //     std::cout << "ingrese el primer digito de la tarjeta: ";
+    //     std::cin >> digit;
+    //     if (digit == 1 || digit == 2)
+    //         cont_upc++;
+    //     else if (digit == 3 || digit == 4)
+    //         cont_pucp++;
+    //     else if (digit == 5)
+    //         cont_unmsm++;
+    //     else if (digit == 6)
+    //         cont_unfv++;
+    //     else if (digit == 7)
+    //         cont_ulima++;
+    //     else if (digit == 8)
+    //         cont_uch++;
+    // }
+
+    // std::cout << "upc: " << cont_upc << '\n';
+    // std::cout << "pucp: " << cont_pucp << '\n';
+    // std::cout << "unms: " << cont_unmsm << '\n';
+    // std::cout << "unfv: " << cont_unfv << '\n';
+    // std::cout << "ulima: " << cont_ulima << '\n';
+    // std::cout << "uch: " << cont_uch << '\n';
+
+    //. 9
+    // int edad;
+    // float dsct, lost_money, asiento_price;
+    // lost_money = 0;
+    // edad = 1;
+    // while (edad > 0) {
+    //     std::cout << "precio del asiento: ";
+    //     std::cin >> asiento_price;
+    //     std::cout << "ingrese edad: ";
+    //     std::cin >> edad;
+    //     if (edad < 5) {
+    //         std::cout << "no puede ingresar" << '\n';
+    //         exit;
+    //     }
+    //     if (edad < 15)
+    //         dsct = 0.35;
+    //     else if (edad < 20)
+    //         dsct = 0.25;
+    //     else if (edad < 46)
+    //         dsct = 0.1;
+    //     else if (edad < 66)
+    //         dsct = 0.25;
+    //     else
+    //         dsct = 0.35;
+
+    //     lost_money += asiento_price * dsct;
+    // }
+
+    // std::cout << "el dinero perdido es: " << lost_money;
+
+    // 11.
+    // int expo, base;
+    // std::cout << "base: ";
+    // std::cin >> base;
+    // std::cout << "exponente: ";
+    // std::cin >> expo;
+    // for (int i = 1; i < expo; i++) {
+    //     base *= base;
+    // }
+    // std::cout << base;
+
+    // 12. factorial
+    // int n;
+    // int resu = 1;
+    // std::cout << "n: ";
+    // std::cin >> n;
+
+    // for (int i = 1; i <= n; i++) {
+    //     resu *= i;
+    // }
+    // std::cout << "resultado: " << resu;
+
+    // 13.
+    // int n, sum, fac;
+    // sum = 0;
+    // fac = 1;
+    // std::cout << "n: ";
+    // std::cin >> n;
+    // for (int i = 0; i <= n; i++) {
+    //     for (int j = 1; j <= i; j++) {
+    //         fac *= j;
+    //     }
+    //     sum += fac;
+    //     fac = 1;
+    // }
+
+    // std::cout << "la suma es: " << sum;
+
+    // 14.
+    // int n;
+    // float sum, fac;
+    // sum = 0.0;
+    // fac = 1.0;
+    // std::cout << "n: ";
+    // std::cin >> n;
+    // for (int i = 1; i <= n; i++) {
+    //     for (int j = 1; j <= i; j++) {
+    //         fac *= j;
+    //     }
+    //     sum += i / fac;
+    //     fac = 1;
+    // }
+    // std::cout << "la sumatoria es: " << sum;
+
+    //  15.
+    // int n, signo;
+    // float sum, fac;
+    // sum = 0;
+    // fac = signo = 1;
+    // std::cout << "n: ";
+    // std::cin >> n;
+    // for (int i = 1; i <= n; i++) {
+    //     for (int j = 1; j <= i; j++) {
+    //         fac *= j;
+    //     }
+    //     sum += signo * (i / fac);
+    //     fac = 1;
+    //     signo *= -1;
+    // }
+    // std::cout << "sumatoria: " << sum;
+
+    // 16.
+    // int n;
+    // float fac, sum;
+    // fac = 1;
+    // sum = 0;
+    // std::cout << "n: ";
+    // std::cin >> n;
+    // for (int i = 1; i <= n; i++) {
+    //     for (int j = 1; j <= i; j++) {
+    //         fac *= j;
+    //     }
+    //     sum += pow(i, i + 1) / fac;
+    //     fac = 1;
+    // }
+    // std::cout << "sumatoria: " << sum;
+
+    // 17.
+    // int n, m, x, signo;
+    // signo = 1;
+    // float sum = 0;
+    // std::cout << "m: ";
+    // std::cin >> m;
+    // std::cout << "x: ";
+    // std::cin >> x;
+    // std::cout << "veces: ";
+    // std::cin >> n;
+    // for (int i = 1; i <= n; i++) {
+    //     sum += signo * (i / (pow(x, m - (i - 1))));
+    //     signo *= -1;
+    // }
+    // std::cout << "sumatoria: " << sum;
+
+        return 0;
 }
